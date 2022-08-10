@@ -1,0 +1,73 @@
+@import '../../styles/var.less';
+
+.l__message-container {
+  position: fixed;
+  top: 8px;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  pointer-events: none;
+}
+.l__notice-wrapper {
+  padding: 8px;
+  text-align: center;
+  .l__notice-content {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+    pointer-events: all;
+    &::before {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+      border-radius: 50%;
+      content: '';
+    }
+    &-success {
+      color: @success-color;
+      &::before {
+        background: @success-color;
+      }
+    }
+    &-info {
+      color: @info-color;
+      &::before {
+        background: @info-color;
+      }
+    }
+    &-danger {
+      color: @danger-color;
+      &::before {
+        background: @danger-color;
+      }
+    }
+    &-warning {
+      color: @warning-color;
+      &::before {
+        background: @warning-color;
+      }
+    }
+  }
+}
+
+.l__message-transition-item-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.l__message-transition-item-enter-active {
+  transform: translate(0);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.l__message-transition-item-exit {
+  opacity: 1;
+}
+.l__message-transition-item-exit-active {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
