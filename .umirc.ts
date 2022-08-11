@@ -9,4 +9,7 @@ export default defineConfig({
   logo: `${getPublicPath()}logo.png`,
   outputPath: 'docs-dist',
   publicPath: getPublicPath(),
+  history: {
+    type: 'hash',
+  },
 });
