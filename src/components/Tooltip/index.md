@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 1
 group:
   path: /data
   title: 数据展示
