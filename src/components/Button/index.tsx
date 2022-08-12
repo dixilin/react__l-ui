@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, ButtonHTMLAttributes, forwardRef, Ref } from 'react';
+import React, { FC, ReactElement, forwardRef, Ref } from 'react';
 import './index.less';
 
 enum Types {
@@ -8,22 +8,24 @@ enum Types {
   INFO = 'info',
   DANGER = 'danger',
 }
+type ITypes = `${Types}`;
+
 enum Sizes {
   MIDDLE = 'middle',
   SMALL = 'small',
   LARGE = 'large',
 }
-
+type ISizes = `${Sizes}`;
 interface IProps {
-  children: ReactElement;
-  type?: Types;
+  children: ReactElement | string;
+  type?: ITypes;
   round?: boolean;
   disabled?: boolean;
-  size?: Sizes;
+  size?: ISizes;
   onClick?: (e: MouseEvent) => void;
 }
 
-const Button: FC<IProps & ButtonHTMLAttributes<HTMLElement>> = forwardRef(
+const Button: FC<IProps> = forwardRef(
   (
     {
       type = Types.PRIMARY,

@@ -1,12 +1,4 @@
-import React, {
-  ReactElement,
-  ReactNode,
-  FC,
-  cloneElement,
-  useRef,
-  useState,
-  useEffect,
-} from 'react';
+import React, { ReactElement, ReactNode, FC, cloneElement, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { createPortal } from 'react-dom';
