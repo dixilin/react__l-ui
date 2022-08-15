@@ -12,7 +12,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Tooltip, Button } from 'l-ui';
+import { Tooltip, Button } from 'chazi-ui';
 
 export default () => (
   <>
@@ -49,3 +49,5 @@ export default () => (
   </>
 );
 ```
+
+<API></API>

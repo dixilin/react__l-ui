@@ -18,10 +18,15 @@ enum Sizes {
 type ISizes = `${Sizes}`;
 interface IProps {
   children: ReactElement | string;
+  /** 类型 */
   type?: ITypes;
+  /** 是否为椭圆 */
   round?: boolean;
+  /** 是否可用 */
   disabled?: boolean;
+  /** 按钮大小 */
   size?: ISizes;
+  /** 按钮点击事件 */
   onClick?: (e: MouseEvent) => void;
 }
 

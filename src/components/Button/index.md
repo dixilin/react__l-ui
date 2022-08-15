@@ -10,7 +10,7 @@ group:
 
 ```tsx
 import React from 'react';
-import { Button, Message } from 'l-ui';
+import { Button, message } from 'chazi-ui';
 
 export default () => {
   return (
@@ -29,7 +29,7 @@ export default () => {
         <Button
           type="danger"
           onClick={() => {
-            Message.danger('danger danger！！！');
+            message.danger('danger danger！！！');
           }}
         >
           Danger
@@ -39,3 +39,5 @@ export default () => {
   );
 };
 ```
+
+<API></API>

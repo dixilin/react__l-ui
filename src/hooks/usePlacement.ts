@@ -3,7 +3,7 @@ import { Placement } from '../types/placement';
 interface IUsePlacementProps {
   triggerRect: DOMRect | null;
   contentRect: DOMRect | null;
-  placement?: Placement;
+  placement?: `${Placement}`;
 }
 
 interface IPosition {

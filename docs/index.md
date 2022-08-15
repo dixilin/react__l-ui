@@ -2,4 +2,12 @@
 order: 1
 ---
 
-## Hello l-ui!
+## Hello chazi-ui!
+
+### 安装
+
+使用 yarn 安装
+
+```shell
+yarn add chazi-ui
+```

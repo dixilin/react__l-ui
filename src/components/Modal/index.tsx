@@ -4,13 +4,21 @@ import { CSSTransition } from 'react-transition-group';
 import Button from '../Button';
 import './index.less';
 interface IProps {
+  /** 是否可见 */
   visible: boolean;
+  /** 标题 */
   title: string;
+  /** 是否显示关闭按钮 */
   closable?: boolean;
+  /** 确定按钮文案 */
   okText?: string;
+  /** 取消按钮文案 */
   cancelText?: string;
+  /** 遮罩点击可关闭 */
   maskClosable?: boolean;
+  /** 点击确定的回调 */
   onOk: () => void;
+  /** 点击取消的回调 */
   onCancel: () => void;
   children: ReactNode;
 }

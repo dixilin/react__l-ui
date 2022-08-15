@@ -1,7 +1,10 @@
 {
-  "private": true,
-  "name": "l-ui",
+  "name": "chazi-ui",
   "version": "1.0.0",
+  "author": "Dicky_Lin",
+  "license": "MIT",
+  "homepage": "https://dixilin.github.io/react__l-ui/#/",
+  "repository": "https://github.com/dixilin/react__l-ui",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",

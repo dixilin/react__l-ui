@@ -10,7 +10,7 @@ group:
 
 ```tsx
 import React, { useState } from 'react';
-import { Button, Modal, Message } from 'l-ui';
+import { Button, Modal, message } from 'chazi-ui';
 export default () => {
   const [visible, setVisible] = useState(false);
   const [visible1, setVisible1] = useState(false);
@@ -27,7 +27,7 @@ export default () => {
         title="Basic Modal"
         onCancel={() => setVisible(false)}
         onOk={() => {
-          Message.success('confirm');
+          message.success('confirm');
           setVisible(false);
         }}
       >
@@ -38,7 +38,7 @@ export default () => {
         title="Basic Modal2"
         onCancel={() => setVisible1(false)}
         onOk={() => {
-          Message.success('confirm');
+          message.success('confirm');
           setVisible1(false);
         }}
       >
@@ -48,3 +48,5 @@ export default () => {
   );
 };
 ```
+
+<API></API>

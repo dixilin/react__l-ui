@@ -1,33 +1,13 @@
-# l-ui
+# chazi-ui
 
 ## Getting Started
 
-Install dependencies,
+### 安装
 
-```bash
-$ npm i
+```shell
+yarn add chazi-ui
 ```
 
-Start the dev server,
+### 文档
 
-```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Run test,
-
-```bash
-$ npm test
-```
-
-Build library via `father`,
-
-```bash
-$ npm run build
-```
+<https://dixilin.github.io/react__l-ui/#/>

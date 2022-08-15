@@ -6,11 +6,11 @@ group:
   order: 3
 ---
 
-## Message
+## message
 
 ```tsx
 import React from 'react';
-import { Message, Button } from 'l-ui';
+import { message, Button } from 'chazi-ui';
 
 export default () => {
   return (
@@ -18,7 +18,7 @@ export default () => {
       <Button
         type="success"
         onClick={() => {
-          Message.success('我是你爸爸success');
+          message.success('我是你爸爸success');
         }}
       >
         success
@@ -26,7 +26,7 @@ export default () => {
       <Button
         type="info"
         onClick={() => {
-          Message.info('我是你爸爸info');
+          message.info('我是你爸爸info');
         }}
       >
         info
@@ -34,7 +34,7 @@ export default () => {
       <Button
         type="warning"
         onClick={() => {
-          Message.warning('我是你爸爸warning');
+          message.warning('我是你爸爸warning');
         }}
       >
         warning
@@ -42,7 +42,7 @@ export default () => {
       <Button
         type="danger"
         onClick={() => {
-          Message.danger('我是你爸爸danger');
+          message.danger('我是你爸爸danger');
         }}
       >
         danger
@@ -51,3 +51,10 @@ export default () => {
   );
 };
 ```
+
+### API
+
+- message.success(content)
+- message.info(content)
+- message.warning(content)
+- message.danger(content)

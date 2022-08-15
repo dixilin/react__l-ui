@@ -8,7 +8,7 @@ import './index.less';
 interface IPositionProps {
   triggerRef: RefObject<HTMLElement | null>;
   children: ReactNode;
-  placement?: Placement;
+  placement?: `${Placement}`;
   color?: string;
 }
 

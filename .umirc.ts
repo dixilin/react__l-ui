@@ -4,7 +4,7 @@ const getPublicPath = () => {
   return process.env.NODE_ENV === 'production' ? './' : '/';
 };
 export default defineConfig({
-  title: 'l-ui',
+  title: 'chazi-ui',
   favicon: `${getPublicPath()}favicon.ico`,
   logo: `${getPublicPath()}logo.png`,
   outputPath: 'docs-dist',

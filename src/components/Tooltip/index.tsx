@@ -9,12 +9,20 @@ import './index.less';
 
 interface ITooltipsProps {
   children: ReactElement<any>;
-  content?: ReactNode;
-  placement?: Placement;
+  /** 内容 */
+  content: string;
+  /** 定位 */
+  placement?: `${Placement}`;
+  /** 颜色 */
   color?: string;
 }
 
-const Tooltip: FC<ITooltipsProps> = ({ children, content, placement, color }) => {
+const Tooltip: FC<ITooltipsProps> = ({
+  children,
+  content,
+  placement = Placement.BOTTOM,
+  color,
+}) => {
   const triggerElRef = useRef<any>(null);
 
   const [visible, setVisible] = useState(false);

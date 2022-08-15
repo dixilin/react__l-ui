@@ -11,10 +11,10 @@ enum MessageType {
   DANGER = 'danger',
 }
 
-type IMessageProps = {
+interface IMessageProps {
   text: string;
-  type?: MessageType;
-};
+  type?: `${MessageType}`;
+}
 
 type INotice = IMessageProps & {
   key: string;
